@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>로그인</title>
+    <link rel='stylesheet' href='../css/emailLogin.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css'
+        integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script defer type='module' src='../js/emailLogin.js'></script>
+</head>
+
+<body id="login_body">
+    <header id='header' class="header">
+        <button type="button"><img id='imgLogo' class="logo_img" src="../img/img_logomain/object_logo.png"></button>
+    </header>
+    <div class="div_loginform">
+        <form id='loginout_form' class='loginout_form'>
+            <div class='btn_back_login'>
+                <button type="button" id='btnBack'><i class='fa-solid fa-circle-chevron-left fa-2x'></i></button>
+            </div>
+            <div class='h_login'>
+                <h3> 이메일 로그인 </h3>
+                <div>계정 이메일을 입력하시면 </div>
+                <div>로그인 링크를 이메일로 보내드려요</div>
+            </div>
+            <input type='email' id='inputEmail' class='id_text' autocomplete=' on' placeholder='이메일' />
+            <div id='errorDiv' class="errorDiv"></div>
+            <button type='submit' id='btnSend' class='btn_loginout'>전송</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

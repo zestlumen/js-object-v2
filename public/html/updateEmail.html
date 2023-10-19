@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이메일 변경-오브젝트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/updateEmlPwd.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css'
+        integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <script defer type='module' src='../js/updateEmail.js'></script>
+</head>
+
+<body>
+    <header id='header' class='header'>
+        <button id='btnImgLogo'><img class='logo_img' src='../img/img_logomain/object_logo.png'></button>
+    </header>
+    <form>
+        <div class="div_chgemlpwd">
+            <h1>
+                <i class='fa-solid fa-circle-chevron-left' id="btnBack"></i>
+                이메일변경
+            </h1>
+            <div>계정 이메일은 모든 프로필에 로그인하고 이메일을 발송하는데 사용됩니다.</div>
+            <div class="nowemail">
+                <span>현재 이메일</span>
+                <span id="currentEmail"></span>
+            </div>
+            <div class="chgemlpwd_box">
+                <input type="text" id='newEmail' required>
+                <label>새 이메일</label>
+            </div>
+            <div id="errorMsgEmail" class='errorDiv'></div>
+            <div class="chgemlpwd_box">
+                <input type="password" id='userPwd' required>
+                <label>비밀번호</label>
+            </div>
+            <div id="errorMsgPwd" class='errorDiv'></div>
+        </div>
+        <div class="div_chgemlpwd_btn">
+            <input type="button" id="btnCancle" value="취소하기">
+            <input type="button" id="btnChange" value="저장하기">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+	
+}
+
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    text-align: center;
+}
+body{
+    background-color: black;
+    color:white;
+
+}
+.login_freepass{
+    padding: 3% 10% 0 10%;
+}
+.flex_ul_freepass{
+    display: flex;
+    padding: 2% 0 0 0;
+    justify-content: center;
+}
+.flex_ul_freepass ul{
+    display: flex;
+    flex-direction: column;
+}
+.flex_ul_freepass li{
+    padding:15px 40px;
+    border-bottom: 1px solid rgb(70, 70, 70);;
+}
+.btn_free_start{
+    width: auto;
+    font-size: 2rem;
+    padding: 0.7rem 2rem;
+    margin-top: 4%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid whitesmoke;
+    transition: 0.5s ease-in-out ;
+}
+.btn_free_start:hover{
+    cursor: pointer;
+    color:white;
+    border: 2px solid transparent;
+    background-color: rgb(112, 157, 248);
+}
+.li_line1{
+    width: auto;
+    height: 79px;
+    padding-bottom: 80%;
+}
+.ul_freepass2,.ul_freepass3{
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+.btn_basic,.btn_premium{
+    padding:1rem;
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    background-color:transparent;
+    border: 2px solid rgb(70, 70, 70) ;
+}
+.ul_freepass2 :hover, .ul_freepass3 :hover{
+    cursor: pointer;
+}
+.login_freepass_head h3{
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: rgb(112, 157, 248);
+}
+.ul_freepass3{
+    color: rgb(112, 157, 248);
+}
+.btn_premium{
+    border: 1px solid  rgb(112, 157, 248);
+    color: rgb(112, 157, 248);
+}
+.login_freepass_head div span{
+    background-color:  rgb(32, 68, 139);
+}

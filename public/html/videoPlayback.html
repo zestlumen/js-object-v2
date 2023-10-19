@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/videoPlayback.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+        integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer type="module" src="../js/videoPlayback.js"></script>
+</head>
+
+<body>
+    <div class="videoPlayback_div">
+        <div id="div_video_movie" class="div_video_movie">
+            <video id="video_movie" class="video_movie" autoplay controls></video>
+            <div id="video_movie_header" class="nav">
+                <button type="button" class="nav_back" id="video_movie_back">
+                    <i class="fa-solid fa-arrow-left-long fa-3x"></i>
+                </button>
+                <button type="button" class="nav_clothes" id="video_movie_clothes">
+                    <i class="fa-solid fa-shirt fa-3x"></i>
+                </button>
+                <button type="button" class="nav_place" id="video_movie_place">
+                    <i class="fas fa-map-marked-alt fa-3x"></i>
+                </button>
+                <button type="button" class="nav_problem" id="video_movie_problem">
+                    <i class="fa-solid fa-circle-exclamation fa-3x"></i>
+                </button>
+            </div>
+        </div>
+        <div id="video_movie_sideList" class="video_movie_sideList">
+            <div id="video_sideList1" id="sideList_inner_div"></div>
+            <div id="video_sideList2" id="sideList_inner_div"></div>
+        </div>
+    </div>
+</body>
+
+</html>

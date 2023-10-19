@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-main: rgb(84, 140, 253);
+    --color-background: #141517;
+    --color-basic-font: #fff;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5%;
+    padding: 1% 2%;
+}
+
+.logo_img {
+    height: 60px;
+    width: 100px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.div_chgemlpwd {
+    padding: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_chgemlpwd h1 {
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+
+.fa-circle-chevron-left {
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.fa-circle-chevron-left:hover {
+    color: var(--color-main);
+    transform: translateX(-15px) scale(1.1);
+}
+
+.nowemail {
+    margin: 30px 0;
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 1.7rem;
+    gap: 10px;
+    color: var(--color-main);
+}
+
+
+.chgemlpwd_box {
+    position: relative;
+    padding: 20px 0;
+    width: 600px;
+    max-width: 100%;
+}
+
+.chgemlpwd_box input {
+    background-color: #4444;
+    color: white;
+    font-size: 2rem;
+    padding: 30px 40px;
+    width: 100%;
+    border: 0.5px solid #7777;
+}
+
+.chgemlpwd_box label {
+    color: #7777;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    transform: translateY(30px);
+    transition: all 0.2s ease-in-out;
+    left: 15px;
+}
+
+.chgemlpwd_box input:valid,
+.chgemlpwd_box input:focus {
+    border: 0.5px solid rgb(112, 157, 248);
+    outline: none;
+}
+
+.chgemlpwd_box input:valid:focus+label,
+.chgemlpwd_box input:focus+label,
+.chgemlpwd_box input:valid:not(:focus)+label {
+    color: rgb(112, 157, 248);
+    font-size: 14px;
+    transform: translateY(11px);
+}
+
+.div_chgemlpwd_btn {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.div_chgemlpwd_btn input {
+    font-size: 22px;
+    margin: 4px;
+    padding: 20px 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.953);
+    border: 2px solid rgba(212, 212, 212, 0.189);
+
+}
+
+.div_chgemlpwd_btn input:hover {
+    cursor: pointer;
+    border: 2.3px solid rgb(198, 198, 198);
+}
+
+.div_chgemlpwd_btn input:last-child {
+    background-color: var(--color-main);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.div_chgemlpwd_btn input:last-child:hover {
+    background-color: rgb(20, 98, 254);
+}
+
+.errorDiv {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    font-size: 1.1rem;
+    line-height: 5px;
+    color: palevioletred;
+}
+
+.btn-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btnSendEmail {
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 40px;
+    background-color: var(--color-main);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    margin: 50px 0 30px 0;
+    border: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+}
+
+.btnSendEmail:hover {
+    border: 2px solid white;
+    background-color: rgb(20, 98, 254);
+}

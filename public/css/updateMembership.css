@@ -1,0 +1,136 @@
+:root {
+    --color-main: rgb(84, 140, 253);
+    --color-background: #141517;
+    --color-basic-font: #fff;
+    --color-system-font: rgb(70, 70, 70);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-system-font);
+}
+
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5%;
+    padding: 1% 2%;
+}
+
+.logo_img {
+    height: 60px;
+    width: 100px;
+}
+
+.chg_freepass {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex_ul_freepass {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.flex_ul_freepass ul {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.flex_ul_freepass li {
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--color-system-font);
+}
+
+.li_line1 {
+    height: 79px;
+    padding-bottom: 80%;
+}
+
+.ul_freepass1,
+.ul_freepass2,
+.ul_freepass3 {
+    text-align: center;
+}
+
+.ul_freepass1 li {
+    color: var(--color-basic-font);
+}
+
+.btn_basic,
+.btn_premium {
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid var(--color-system-font);
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.btn_blank {
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+}
+
+.chg_freepass_head h3 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: var(--color-main);
+}
+
+.chg_freepass_head div {
+    color: var(--color-basic-font);
+}
+
+.btn_free_chg {
+    width: auto;
+    font-size: 2rem;
+    padding: 0.7rem 2rem;
+    margin-top: 4%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid whitesmoke;
+    transition: all 300ms ease-in-out;
+}
+
+.btn_free_chg:hover {
+    cursor: pointer;
+    color: white;
+    border: 2px solid transparent;
+    background-color: var(--color-main);
+}
+
+.choiceFont {
+    color: var(--color-main);
+}
+
+.choicBorder {
+    border: 2px solid var(--color-main);
+    color: var(--color-main);
+}

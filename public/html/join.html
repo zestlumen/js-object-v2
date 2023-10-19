@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>회원가입</title>
+    <link rel='stylesheet' href='../css/joinLogin.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css'
+        integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <script defer type='module' src='../js/join.js'></script>
+</head>
+
+<body>
+    <header id='header' class="header">
+        <button id='btnImgLogo'><img class="logo_img" src="../img/img_logomain/object_logo.png"></button>
+    </header>
+    <div class="div_loginform">
+        <form id='loginout_form' class='loginout_form'>
+            <div class='btn_back_login'>
+                <i id='btnBack' class='fa-solid fa-circle-chevron-left fa-2x'></i></button>
+                <button id='btn_login' type='button' class='btn_login'>로그인</button>
+            </div>
+            <h3> 회원가입 </h3>
+            <div class="joinInputBox">
+                <input type='email' id='inputEmail' class='sign_input' placeholder='object@example.com' />
+                <input type='text' id='inputName' class='sign_input' placeholder='이름 설정' />
+                <input type='password' id='inputPwd' class='sign_input' placeholder='비밀번호 설정' />
+                <div id='errorAlert' class="errorDiv"></div>
+            </div>
+            <button type='submit' id='btnSign' class='btn_loginout'>계정생성</button>
+            <div class="others">구글 계정으로 가입</div>
+            <button id='gLoginBtn' class="google-login-button"><img
+                    src='../img/img_icon/btn_google_signin_dark_pressed_web@2x.png' alt='googleBtn' />
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

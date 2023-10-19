@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>비밀번호 변경-오브젝트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/updateEmlPwd.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+        integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer type="module" src="../js/updatePwd.js"></script>
+</head>
+
+<body>
+    <header id='header' class='header'>
+        <button id='btnImgLogo'><img class='logo_img' src='../img/img_logomain/object_logo.png'></button>
+    </header>
+    <form>
+        <div class="div_chgemlpwd">
+            <h1>
+                <i class='fa-solid fa-circle-chevron-left' id="btnBack"></i>
+                비밀번호 변경
+            </h1>
+            <div>비밀번호 변경 시 로그인된 모든 디바이스에서 새로 로그인 해주세요.</div>
+            <button id="btnSendEmail" class="btnSendEmail">비밀번호 재설정 이메일로 보내기</button>
+            <div class="chgemlpwd_box">
+                <input type="password" id="input_now_pwd" required>
+                <label>기존 비밀번호</label>
+            </div>
+            <div id="errorMsgPwd1" class='errorDiv'></div>
+            <div class="chgemlpwd_box">
+                <input type="password" id="input_new_pwd" required>
+                <label>새 비밀번호</label>
+            </div>
+            <div id="errorMsgPwd2" class='errorDiv'></div>
+            <div class="chgemlpwd_box">
+                <input type="password" id="input_new_pwd2" required>
+                <label>새 비밀번호 확인</label>
+            </div>
+            <div id="errorMsgPwd3" class='errorDiv'></div>
+            <div class="div_chgemlpwd_btn">
+                <input type="button" id="btnCancle" value="취소하기">
+                <input type="button" id="btnChange" value="저장하기">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>계정&설정-오브젝트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/settings.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css'
+        integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <script defer type='module' src='../js/settings.js'></script>
+
+</head>
+
+<body>
+    <header id='header' class="header">
+        <button id='btnImgLogo'><img class="logo_img" src="../img/img_logomain/object_logo.png"></button>
+    </header>
+    <div class="div_settings">
+        <div class='accset_container'>
+            <h1 class='accset_header'>계정 & 설정</h1>
+            <div class='accset_content'>
+                <h2 class='accset_content_header'>이용권 및 결제</h2>
+                <ul class='paynaccess'>
+                    <li class='paynaccess_access'>
+                        <span>상세정보</span>
+                        <div class='div_paynaccess_access_now'>
+                            <div id='div_payContents1'></div>
+                            <div id='div_payContents2'></div>
+                        </div>
+                        <button type='button' id='btn_chg_freepass'>이용권변경</button>
+                    </li>
+                    <li class='paynaccess_pay'>
+                        <span>다음 결제일</span>
+                        <div>2022년 7월 20일 </div>
+                        <button type='button'></button>
+                    </li>
+                </ul>
+            </div>
+            <div class='accset_content'>
+                <h2 class='accset_content_header'>프로필</h2>
+                <div class='accset_content1'>
+                    <ul class='profile'>
+                        <li id='profile_li1' class="profile_li" data-user="user1">
+                            <div class='profiledetail'>
+                                <img id='userImg1' class='userImg' src=''>
+                                <span id='userName1'></span>
+                                <button type='button'><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                        <li id='profile_li2' class="profile_li" data-user="user2">
+                            <div class='profiledetail'>
+                                <img id='userImg2' class='userImg' src=''>
+                                <span id='userName2'></span>
+                                <button type='button'><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                        <li id='profile_li3' class="profile_li" data-user="user3">
+                            <div class='profiledetail'>
+                                <img id='userImg3' class='userImg' src=''>
+                                <span id='userName3'></span>
+                                <button type='button'><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                        <li id='profile_li4' class="profile_li" data-user="user4">
+                            <div class='profiledetail'>
+                                <img id='userImg4' class='userImg' src=''>
+                                <span id='userName4'></span>
+                                <button type='button'><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='accset_content'>
+                <h2 class='accset_content_header'>계정</h2>
+                <ul class='accset_content2'>
+                    <li class='now_email'>
+                        <span> 현재 이메일 </span>
+                        <span id='span_userEmail'></span>
+                    </li>
+                    <li>
+                        <button type='button' id='btn_change_id'>이메일 변경</button>
+                    </li>
+                    <li>
+                        <button type='button' id='btn_change_pwd'>비밀번호 변경</button>
+                    </li>
+                </ul>
+            </div>
+            <div class='accset_content'>
+                <h2 class='accset_content_header'>설정</h2>
+                <ul class='accset_content3'>
+                    <li class='li_alert_set'>
+                        <span class='alert_set' id='span_btn_alert'>알림설정</span>
+                        <input type='checkbox' id='alert_toggle' hidden>
+                        <label for='alert_toggle' class='toggle_switch'>
+                            <span class='toggle_btn'></span>
+                        </label>
+                    </li>
+                    <li>
+                        <button class='accset_link'>고객센터</button>
+                    </li>
+                    <li>
+                        <button class='accset_link' id='btnLogout'>로그아웃</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>

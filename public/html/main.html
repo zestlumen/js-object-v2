@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html id="scrollable">
+
+<head>
+    <meta charset='UTF-8'>
+    <title>홈-오브젝트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css'
+        integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <link rel='stylesheet' href='../css/main.css'>
+    <!-- <link rel='stylesheet' href='../css/search.css'> -->
+    <script defer type='module' src='../js/main.js'></script>
+</head>
+
+<body id='main_body' class='main_body'>
+    <div id="main_body_div1" class="main_body_div1">
+        <header id='mainheader' class="mainheader">
+            <div class="header1">
+                <button type="button"><img id="btnImgLogo" class="logo_img"
+                        src="../img/img_logomain/object_logo.png"></button>
+                <button type="button" class="btn_category">카테고리
+                    <ul class="toggle_category" id="toggle_category">
+                        <li class="toggle_category_li">한국 영화</li>
+                        <li class="toggle_category_li">해외 영화</li>
+                        <li class="toggle_category_li">한국 드라마</li>
+                        <li class="toggle_category_li">해외 드라마</li>
+                        <li class="toggle_category_li">예능</li>
+                        <li class="toggle_category_li">다큐멘터리</li>
+                        <li class="toggle_category_li">애니메이션</li>
+                    </ul>
+                </button>
+                <button type="button" class="btn_mylist">내가 찜한 콘텐츠</button>
+            </div>
+            <div class="header2">
+                <button type="button" id="btn_search" class="btn_search">
+                    <i class="fas fa-search" id="btnSearchIcon"></i>
+                </button>
+                <div id="div_search" class="div_search">
+                    <input type='text' id='search_text' placeholder="제목, 배우로 검색" class='search_text'
+                        autocomplete='off' />
+                    <i class="fa-solid fa-xmark search_xBtn" id="search_xBtn"></i>
+                </div>
+                <div class="search_window" id="search_window">
+                    <div id="searchTagDiv" class="searchTagDiv"></div>
+                    <div id="searchImgDiv" class="searchImgDiv"></div>
+                </div>
+                <button type="button" class="btn_user">
+                    <img class="current_user" id="current_user" />
+                    <ul class="toggle_multiuser">
+                        <li id="multiuser1" data-user="user1" class="multiuser_list">
+                            <img id="userImg1" class='userImg' src="" />
+                            <span id='userName1'></span>
+                        </li>
+                        <li id="multiuser2" data-user="user2" class="multiuser_list">
+                            <img id="userImg2" class='userImg' src="" />
+                            <span id='userName2'></span>
+                        </li>
+                        <li id="multiuser3" data-user="user3" class="multiuser_list">
+                            <img id="userImg3" class='userImg' src="" />
+                            <span id='userName3'></span>
+                        </li>
+                        <li id="multiuser4" data-user="user4" class="multiuser_list">
+                            <img id="userImg4" class='userImg' src="" />
+                            <span id='userName4'></span>
+                        </li>
+
+                        <li id='updateMultiUserProfile' class="multiuser_list">
+                            <i class="fas fa-pen"></i>
+                            <span>프로필 관리</span>
+                        </li>
+                        <li id='settings' class="multiuser_list">
+                            <i class="fas fa-user"></i>
+                            <span>계정</span>
+                        </li>
+                        <li class="logout" id='logout'>
+                            <span>로그아웃</span>
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </header>
+        <div id='mainDramaDiv' class='mainDramaDiv'>
+            <div class='mainDramainnerDiv'>
+                <div id="mainDramaDescription" class="mainDramaDescription"></div>
+                <div class="mainDramaBtnDiv">
+                    <button type="button" id="mainDramaPlayBtn" class="mainDramaPlayBtn"><i
+                            class="fa-solid fa-play"></i>재생</button>
+                    <button type="button" class="mainDramaDetailBtn" id="btn_main_ourblues_detail">
+                        <i class="fa-solid fa-circle-info"></i>상세정보
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id='main' class='main_div'>
+            <div id='main_div_list' class='main_div_list'></div>
+            <div id='cate_choice_list' class="cate_choice_list"></div>
+            <div id='my_list_list' class="myListDiv"></div>
+        </div>
+        <button type="button" class="arrow-up" id="arrow-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <footer id='footer' class='footer'>
+            <span>(주)TypeObject</span>
+            <span>제작 : zestlumen</span>
+            <span>email : zestlumen@gmail.com</span>
+            <span>주소 : 서울특별시 관악구 남부순환로</span>
+        </footer>
+    </div>
+    <div id="wrap" class="wrap">
+        <div id='detail_popup' class='detail_popup'>
+            <div class='detail_popup_video'>
+                <div id="video_preview" class='detail_video_preview'></div>
+                <i class='fa-solid fa-circle-xmark fa-2x videoBtnX'></i>
+                <div class="detail_video_btns">
+                    <button type='button' id='btn_detail_video_play' class='btn_main_play'>
+                        <i class="fa-solid fa-play"></i>재생
+                    </button>
+                    <button type="button" id='btnHeart'>
+                        <i class='fa-regular fa-heart trans-heart'></i>
+                        <i class="fa-solid fa-heart fill-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="detail_popup_description">
+                <div class='detail_popup_info'>
+                    <div class='detail_popup_info_left'>
+                        <div class='detail_popup_info_left_text1'>
+                            <span id='video_release' class='detail_popup_info_leftyear'></span>
+                            <span class="detail_popup_info_leftyear">에피소드</span>
+                            <span class='detail_popup_info_resolutionr'>HD</span><br>
+                            <span id="video_rating1" class='detail_popup_info_rating'></span>
+                        </div>
+                        <div id='video_contents' class='detail_popup_info_left_text2'></div>
+                    </div>
+                    <div class='detail_popup_info_right'>
+                        <div>
+                            <span>출연:</span>
+                            <b class='b_v_cast video_cast1' id="video_cast1"></b>
+                            <button type="button" class='btn_cast_more'>더 보기</button>
+                        </div>
+                        <div><span>장르:</span><b id="video_genre1" class='b_v_genre'></b></div <div>
+                        <div><span>시리즈 특징:</span><b id='b_v_tag' class='b_v_tag'></b></div>
+                    </div>
+                </div>
+            </div>
+            <div class='detail_popup_episode' id='detail_popup_episode'>
+                <div class='detail_popup_episode_head'>
+                    <div>회차</div>
+                    <div id='video_title1'></div>
+                </div>
+            </div>
+            <div class='detail_popup_recommend' id='detail_popup_recommend'>
+                <h3 class='detail_popup_recommend_h3'>요즘 가장 인기있는 콘텐츠</h3>
+                <div class='detail_popup_recommend_container' id='detail_popup_recommend_container'></div>
+            </div>
+            <div class='detail_popup_footer'>
+                <div id='video_title2' class="b_v_title"><span>상세 정보</span></div>
+                <span class='span_info_softly'>크리에이터:</span><b id='video_director'></b><br>
+                <span class='span_info_softly'>출연:</span><b id='video_cast2'></b><br>
+                <span class='span_info_softly'>장르:</span><b id='video_genre2'></b><br>
+                <span class='span_info_softly'>관람등급:</span><b id='video_rating2'></b><br>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
